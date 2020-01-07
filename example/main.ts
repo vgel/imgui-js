@@ -1,9 +1,9 @@
-import * as ImGui from "imgui-js";
-import * as ImGui_Impl from "./imgui_impl";
+import * as ImGui from "imgui-js/imgui";
+import * as ImGui_Impl from "imgui-js/imgui_impl";
 
-import { ImVec2 } from "imgui-js";
-import { ImVec4 } from "imgui-js";
-import { ImGuiIO } from "imgui-js";
+import { ImVec2 } from "imgui-js/imgui";
+import { ImVec4 } from "imgui-js/imgui";
+import { ImGuiIO } from "imgui-js/imgui";
 import { ShowDemoWindow } from "imgui-js/imgui_demo";
 
 import { MemoryEditor } from "imgui-js/imgui_memory_editor";

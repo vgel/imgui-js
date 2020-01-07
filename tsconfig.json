@@ -1,13 +1,17 @@
 {
-  "compilerOptions": {
-    "target": "ES2016",
-    "module": "system",
-    "strict": true,
-    "inlineSourceMap": true
-  },
-  "files": [
-    "imgui.ts",
-    "imgui_demo.ts",
-    "imgui_memory_editor.ts"
-  ]
+    "compilerOptions": {
+        "outDir": "dist/dummy", // this will be overriden but we need *something* or ts will complain about overwriting files
+        "target": "es2015",
+        "strict": true,
+        "sourceMap": true,
+        "declaration": true,
+        "allowJs": true,
+    },
+    "files": [
+        "imgui.ts",
+        "imgui_impl.ts",
+        "imgui_demo.ts",
+        "bind-imgui.js",
+        "imgui_memory_editor.ts",
+    ]
 }

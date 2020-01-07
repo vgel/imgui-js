@@ -2491,7 +2491,7 @@ EMSCRIPTEN_BINDINGS(ImGui) {
     // IMGUI_API void          TreePop();                                                              // ~ Unindent()+PopId()
     emscripten::function("TreePop", &ImGui::TreePop);
     // IMGUI_API void          TreeAdvanceToLabelPos();                                                // advance cursor x position by GetTreeNodeToLabelSpacing()
-    emscripten::function("TreeAdvanceToLabelPos", &ImGui::TreeAdvanceToLabelPos);
+    //emscripten::function("TreeAdvanceToLabelPos", &ImGui::TreeAdvanceToLabelPos);
     // IMGUI_API float         GetTreeNodeToLabelSpacing();                                            // horizontal distance preceding label when using TreeNode*() or Bullet() == (g.FontSize + style.FramePadding.x*2) for a regular unframed TreeNode
     emscripten::function("GetTreeNodeToLabelSpacing", &ImGui::GetTreeNodeToLabelSpacing);
     // IMGUI_API bool          CollapsingHeader(const char* label, ImGuiTreeNodeFlags flags = 0);      // if returning 'true' the header is open. doesn't indent nor push on ID stack. user doesn't have to call TreePop().
